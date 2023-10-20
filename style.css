@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+.home{
+    background-image: url(img/background1.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.41) 100%);
+    height: 20%;
+}
+
+.menu-navbar a{
+    margin: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-sign_up {
+    border-radius: 10px;
+    border: 4px solid #000;
+    background: #FF9800;
+    height: 40px;
+    width: 100px;
+}
+
+.logo1{
+    width: 326px;
+}
