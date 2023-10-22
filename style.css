@@ -2,11 +2,10 @@
     margin: 0;
 }
 
-.home{
-    background-image: url(img/p2.jpg);
-    background-size: cover;
-    height: 600px;
+body{
+    background-color: black;
 }
+
 /* NAVBAR */
 .navbar{
     display: flex;
@@ -16,6 +15,7 @@
     height: 90px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .menu-navbar a{
@@ -40,17 +40,18 @@
 }
 
 /* <!-- TITLE-HOME --> */
-
+.top-home{
+    background-image: url(img/p2.jpg);
+    background-size: cover;
+    height: 600px;
+}
 .t-home{
-    font-family: Karla;
-    font-size: 30px;
-    font-style: normal;
+    font-size: 70px;
     font-weight: 800;
-    line-height: normal;
     margin-bottom: 50px;
 }
 
-.home-subscribe{
+.home-title{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,10 +71,106 @@
     height: 50px;
     width: 150px;
     color: white;
-    font-family: Karla;
     font-size: 24px;
 }
 
-.home-subscribe button{
+.home-title button{
     box-shadow: 0px 0px 30px 10px #000;
+}
+
+/* SUBSCRIBE-HOME */
+
+.title-sub{
+    color: #FF9800;
+    font-family: cursive;
+    text-align: center;
+    margin: 40px 0;
+}
+
+            /* CARDS */
+/* THE FRONT CARD */
+.image-card1{
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 289px;
+    height: 366px;
+    border-radius: 10px;
+}
+
+.image-card2{
+    background-image: url(img/2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 289px;
+    height: 366px;
+    border-radius: 10px;
+}
+
+.image-card3{
+    background-image: url(img/p3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 289px;
+    height: 366px;
+    border-radius: 10px;
+}
+
+.card-title {
+    margin-top: -366px;
+    width: 289px;
+    height: 496px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 152, 0, 0.00) 44.96%, #FF9800 73.01%, #FF9800 99.96%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-family: cursive;
+    font-size: 48px;
+}
+
+/* THEBACKCARD */
+
+.theback{
+    width: 289px;
+    height: 496px;
+    border-radius: 10px;
+    background-color: black;
+    color: #FF9800;
+    font-family: cursive;
+}
+
+.content-back_card h3{
+    text-align: center;
+}
+
+/* ROTATION CARD */
+
+.card{
+    width: 289px;
+    height: 496px;
+    /* position: absolute; */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.thefront{
+    /* position: absolute; */
+    backface-visibility: hidden;
+}
+.theback{
+    /* position: absolute; */
+    margin-top: -496px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
 }
