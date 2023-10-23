@@ -43,6 +43,7 @@ body{
 .top-home{
     background-image: url(img/p2.jpg);
     background-size: cover;
+    width: 100%;
     height: 600px;
 }
 .t-home{
@@ -108,7 +109,7 @@ body{
 }
 
 .image-card3{
-    background-image: url(img/p3.jpg);
+    background-image: url(img/p6.jpg);
     background-size: cover;
     background-position: center;
     width: 289px;
@@ -173,4 +174,63 @@ body{
 .cards{
     display: flex;
     justify-content: space-around;
+}
+
+  /* SOCIAL MEDIA */
+
+.social-media{
+    background: white;
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-sm{
+    font-size: 25px;
+}
+
+.desc-sm{
+    font-size: 20px;
+}
+
+.border{
+    border: solid 2px #000;
+    width: 100px;
+}
+
+.banner-links a{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 0 20px;
+}
+
+.icon-sm{
+    margin-top: 50px;
+}
+
+    /* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.logo-footer{
+    background-image: url(img/logo2.PNG);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 200px;
 }
