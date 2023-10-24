@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-body{
+.body-index{
     background-color: black;
 }
 
@@ -274,7 +274,7 @@ body{
     text-align: center;
 }
 
-.title-sm{
+.title-sm {
     font-size: 25px;
 }
 
@@ -305,6 +305,8 @@ body{
     align-items: center;
     text-align: center;
     color: white;
+    background-color: black;
+    width: 100%;
 }
 
 .logo-footer{
@@ -313,4 +315,81 @@ body{
     background-position: center;
     width: 300px;
     height: 200px;
+}
+
+/* STORE */
+
+ /* TOP-STORE */
+
+.title-store{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+}
+
+.title-store1{
+    font-size: 45px;
+    font-weight: 500;
+    color: #FF9800;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.desc-store{
+    font-size: 15px;
+}
+
+    /* STORE-FILTRE */
+
+.store-filtre{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.filtre , .filtre1, .filtre2{
+    border-radius: 10px;
+    border: 2px solid #000;
+    height: 35px;
+    width: max-content;
+    color: black;
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.filtre{
+    background: #FF9800;
+}
+
+ /* OBJECT-STORE */
+
+.object-store{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+}
+ 
+ .object-store img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+ }
+
+ .object-store p{
+    font-family: cursive;
+    font-size: 18px;
+ }
+
+ .game1{
+    border-radius: 10px;
+    margin: 20px 40px;
+    box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
