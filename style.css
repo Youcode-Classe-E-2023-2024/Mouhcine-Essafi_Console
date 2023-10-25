@@ -674,6 +674,7 @@ hr{
         font-size: 30px;
     }
     .inp-signup *{
+        height: 35px;
         font-size: 15px;
     }
 }
@@ -686,7 +687,18 @@ hr{
         font-size: 25px;
         margin-bottom: -20px;
     }
-
+    #signup{
+        font-size: 22px;
+    }
+    .inp-signup{
+        padding: 110px 90px;
+    }
+    #text{
+        margin-top: 5px;
+    }
+    .inp-signup button{
+        margin-top: 10px;
+    }
 }
 
     /* ABOUT */
@@ -699,6 +711,7 @@ hr{
     font-family: cursive;
     padding-top: 100px;
     background-color: #000000;
+    width: 100%;
 }
 
 .t-about{
@@ -709,13 +722,44 @@ hr{
 
 .text-about{
     color: white;
-    width: 785px;
+    width: 77%;
     font-size: large;
 }
 
 #img-back_to_home{
-    margin: 30px 0;
+    margin: 40px 0;
     width: 180px;
     height: 55px;
+}
+
+@media(max-width: 880px){
+    .t-about{
+        font-size: 30px;
+        color: #FF9800;
+        margin-bottom: 35px;
+    }
+    .text-about{
+        color: white;
+        font-size: medium;
+    }
+    #img-back_to_home{
+        margin: 35px 0;
+        width: 150px;
+        height: 45px;
+    }
+}
+@media(max-width: 450px){
+    .home-title{
+        height: 85vh;
+    }
+    .t-home {
+        font-size: 40px;
+    }
+    .title-sub{
+        font-size: 23px;
+    }
+    .footer{
+        font-size: small;
+    }
 }
 
