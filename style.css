@@ -50,8 +50,13 @@
     border-radius: 10px;
     border: 4px solid #000;
     background: #FF9800;
-    height: 40px;
-    width: 100px;
+    height: 30px;
+    width: 80px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* RESPONSIVE-NAVBAR */
@@ -67,7 +72,6 @@
         display: block;
         margin-left: -23px;
         color: white;
-
     }
     .logo1{
         width: 250px;
@@ -523,7 +527,7 @@ hr{
 
 .contact{
     width: 100%;
-    height: 280px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -543,6 +547,7 @@ hr{
 
 .desc-contact{
     font-size: 20px;
+    width: 90%;
 }
 
 .email{
@@ -556,22 +561,23 @@ hr{
         font-size: 25px;
     }
     .desc-contact{
-        font-size: 15px;
+        font-size: 14px;
     }
     .email{
         font-size: 15px;
     }
     .contact{
-        height: 230px;
+        height: 220px;
     }
 }
 
-@media(max-width: 660px){
+@media(max-width: 680px){
     .title-contact{
         font-size: 20px;
     }
     .desc-contact{
-        font-size: 11px;
+        font-size: 12px;
+        width: 380px;
     }
     .email{
         font-size: 13px;
@@ -582,4 +588,103 @@ hr{
     .logo-footer{
         width: 270px;
     }
+}
+
+    /* SIGN-UP */
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 850px;
+}
+
+.signup img{
+    width: 100%;
+    height: 850px;
+}
+
+.input-signup{
+    width: 500px;
+    height: 470px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.80);
+    position: absolute;
+}
+
+.inp-signup{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 90px;
+}
+
+.inp-signup *{
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+#signup{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.inp-signup input{
+    background: #1E1E1E;
+    color: white;
+}
+
+.inp-signup button{
+    margin-top: 30px;
+    background-color: #FF9800;
+    color: white;
+    font-size: 20px;
+}
+
+.inp-signup button:hover{
+    background-color: #af6a01;
+}
+
+.inp-signup *{
+    height: 50px;
+    font-size: 20px;
+}
+
+#need-help{
+    font-size: 16px;
+    color: rgb(146, 146, 146);
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 600px) {
+    #signup-img{
+        display: none;
+    }
+    .signup{
+        background-color: #000000;
+        height: 500px;
+    }
+    .input-signup{
+        width: 450px;
+        border-radius: 10px;
+    }
+    #signup{
+        font-size: 30px;
+    }
+    .inp-signup *{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px){
+    .input-signup{
+        width: 400px;
+    }
+    #signup{
+        font-size: 25px;
+        margin-bottom: -20px;
+    }
+
 }
